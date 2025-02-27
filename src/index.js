@@ -9,8 +9,7 @@ function refreshweather(response) {
 
 function searchCity(city) {
   let apiKey = "e2f90841bba6oe00351f9aa2e3877b4t";
-  let apiURL =
-    "https://api.shecodes.io/weather/v1/current?query=${city}&key=e2f90841bba6oe00351f9aa2e3877b4t&units=metric";
+  let apiURL = `https://api.shecodes.io/weather/v1/current?query=${city}&key=e2f90841bba6oe00351f9aa2e3877b4t&units=metric`;
   axios.get(apiURL).then(refreshweather);
 }
 
